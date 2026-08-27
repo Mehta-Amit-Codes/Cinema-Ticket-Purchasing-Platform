@@ -1,7 +1,7 @@
 {
     "singleQuote": true,
-    "endOfLine": "auto",
-    "trailingComma": "none",
     "tabWidth": 4,
-    "bracketSpacing": true
+    "semi": true,
+    "trailingComma": "none",
+    "printWidth": 100
 }

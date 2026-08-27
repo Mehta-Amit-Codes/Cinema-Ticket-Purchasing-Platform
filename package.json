@@ -1,26 +1,55 @@
 {
-    "name": "cinema-ticket-purchasing-platform",
-    "version": "1.0.0",
-    "description": "",
-    "main": "main.ts",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npm run build && node dist/app.js",
-        "dev": "npm run watch-ts",
-        "build": "tsc",
-        "watch-ts": "nodemon --exec ts-node src/app.ts"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^16.3.1",
-        "express": "^4.18.2",
-        "typescript": "^5.1.6"
-    },
-    "devDependencies": {
-        "@types/express": "^4.17.17",
-        "@types/node": "^20.3.2",
-        "nodemon": "^2.0.22",
-        "ts-node": "^10.9.1"
-    }
+  "name": "cinema-ticket-purchasing-platform",
+  "version": "2.0.0",
+  "description": "Cinema Ticket Purchasing Platform API",
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.4.1",
+    "pino": "^9.5.0",
+    "pino-http": "^10.3.0",
+    "uuid": "^11.0.3",
+    "zod": "^3.24.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/supertest": "^6.0.2",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.7",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^8.57.1",
+    "pino-pretty": "^13.0.0",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "@vitest/coverage-v8": "^2.1.8"
+  }
 }
