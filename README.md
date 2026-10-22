@@ -1,4 +1,5 @@
 # Cinema Ticket Purchasing Platform (v2)
+[![Diagram](https://img.shields.io/badge/gitdiagram-view%20architecture-blue)](https://gitdiagram.com/mehta-amit-codes/cinema-ticket-purchasing-platform)
 
 A small Express + TypeScript API for creating cinemas and purchasing seats,
 rebuilt on top of the original prototype.
